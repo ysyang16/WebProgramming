@@ -50,7 +50,7 @@ public class BeatBoxSaveOnly {  // implements MetaEventListener
           buttonBox.add(stop);
             
           JButton update=new JButton("Update");
-          update.addActionListener(new MyUpdataListener());
+          update.addActionListener(new MyUpdateListener());
           buttonBox.add(update);
 
           JButton upTempo = new JButton("Tempo Up");
