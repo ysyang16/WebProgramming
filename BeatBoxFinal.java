@@ -14,7 +14,23 @@ import java.net.*;
 
 
 public class BeatBoxFinal {  // implements MetaEventListener 
-
+      JLabel acousticsnare;
+	JLabel bassdrum;
+	JLabel crashcymbal;
+	JLabel closedhihat;
+	JLabel cowbell;
+	JLabel handclap;
+	JLabel hibongo;
+	JLabel highagogo;
+	JLabel hightom;
+	JLabel lowconga;
+	JLabel lowmidtom;
+	JLabel maracas;
+	JLabel openhiconga;
+	JLabel openhihat;
+	JLabel vibraslap;
+	JLabel whistle;
+      
       JPanel mainPanel;
       JList incomingList;
       JTextField userMessage;
@@ -65,6 +81,39 @@ public class BeatBoxFinal {  // implements MetaEventListener
           BorderLayout layout = new BorderLayout();
           JPanel background = new JPanel(layout);
           background.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
+            
+          JLabel acousticsnare = new JLabel("");
+          acousticsnare.setIcon(new ImageIcon("acousticsnare.png"));
+	    JLabel bassdrum = new JLabel("");
+          bassdrum.setIcon(new ImageIcon("bassdrum.png"));
+          JLabel closedhihat = new JLabel("");
+          closedhihat.setIcon(new ImageIcon("closedhihat.png"));
+          JLabel cowbell = new JLabel("");
+          cowbell.setIcon(new ImageIcon("cowbell.png"));
+          JLabel crashcymbal = new JLabel("");
+          crashcymbal.setIcon(new ImageIcon("crashcymbal.png"));
+          JLabel handclap = new JLabel("");
+          handclap.setIcon(new ImageIcon("handclap.png"));
+          JLabel hibongo = new JLabel("");
+          hibongo.setIcon(new ImageIcon("hibongo.png"));
+          JLabel highagogo = new JLabel("");
+          highagogo.setIcon(new ImageIcon("highagogo.png"));
+          JLabel hightom = new JLabel("");
+          hightom.setIcon(new ImageIcon("hightom.png"));
+          JLabel lowconga = new JLabel("");
+          lowconga.setIcon(new ImageIcon("lowconga.png"));
+          JLabel lowmidtom = new JLabel("");
+          lowmidtom.setIcon(new ImageIcon("lowmidtom.png"));
+          JLabel maracas = new JLabel("");
+          maracas.setIcon(new ImageIcon("maracas.png"));
+          JLabel openhiconga = new JLabel("");
+          openhiconga.setIcon(new ImageIcon("openhiconga.png"));
+          JLabel openhihat = new JLabel("");
+          openhihat.setIcon(new ImageIcon("openhihat.png"));
+          JLabel vibraslap = new JLabel("");
+          vibraslap.setIcon(new ImageIcon("vibraslap.png"));
+          JLabel whistle = new JLabel("");
+          whistle.setIcon(new ImageIcon("whistle.png"));
 
           checkboxList = new ArrayList<JCheckBox>();
           Box buttonBox = new Box(BoxLayout.Y_AXIS);
@@ -106,9 +155,22 @@ public class BeatBoxFinal {  // implements MetaEventListener
           incomingList.setListData(listVector);
           
           Box nameBox = new Box(BoxLayout.Y_AXIS);
-          for (int i = 0; i < 16; i++) {
-              nameBox.add(new Label(instrumentNames[i]));
-          }
+          nameBox.add(bassdrum);
+          nameBox.add(closedhihat);
+          nameBox.add(openhihat);
+          nameBox.add(acousticsnare);
+          nameBox.add(crashcymbal);
+          nameBox.add(handclap);
+          nameBox.add(hightom);
+          nameBox.add(hibongo);
+          nameBox.add(maracas);
+          nameBox.add(whistle);
+          nameBox.add(lowconga);
+          nameBox.add(cowbell);
+          nameBox.add(vibraslap);
+          nameBox.add(lowmidtom);
+          nameBox.add(highagogo);
+          nameBox.add(openhiconga);
         
           background.add(BorderLayout.EAST, buttonBox);
           background.add(BorderLayout.WEST, nameBox);
